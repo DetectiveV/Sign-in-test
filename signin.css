@@ -1,0 +1,85 @@
+.header {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.description {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-family: monospace;
+}
+#all {
+    min-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: fantasy;
+}
+.header-field {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+.header-sign-field {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*-----Body-----*/
+body {
+    background-image: url(BG.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 130px
+}
+.paper {
+    background: white; /* White background like paper */
+    max-width: 50%; /* Adjust size */ 
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px; /* Smooth corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+.paper2 {
+    background: white; /* White background like paper */
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 23.7%;
+    margin-right: 0;
+    border-radius: 10px; /* Smooth corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    max-width: 500px;
+    width: 270px;
+    
+}
+
+/*-----Footer-----*/
+.footer-sign {
+    font-style: italic;
+    margin-top: -25px;
+    margin-bottom: 2px;
+    width: 50%;
+    margin-left: 10px;
+    margin-right: auto;
+    min-width: 250px;
+}
+.made-by {
+    margin-left: 10px;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: -25px;
+    min-width: 250px;
+}
+a:hover {color:steelblue ;}
+a:active {color:darkblue}
