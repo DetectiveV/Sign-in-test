@@ -7,66 +7,83 @@
       <link rel="stylesheet" href="signin.css">
   </head>
     <body>
-      <main>
       <section>
         <div class="paper">
         <div class="all">
             <div class="header">
-              <fieldset class="header-field">
-                <h1>Paradox</h1>
-                <p class="description">The one and only</p>
-              </fieldset>
-              <fieldset class="header-sign-field">
-                <h2>Sign In Here</h2>
-                <p>Please fill the form bellow!</p>
-              </fieldset>
+                <fieldset class="header-field">
+                  <h1>Paradox</h1>
+                  <p class="description">The one and only</p>
+                </fieldset>
+                <div class="sign-in">
+                  <h2>Sign In Here</h2>
+                  <p class="fill-form">Please fill the form bellow!</p>
+                </div>
+              <div class="line"></div>
             </div>
-            <div id="all">         
-            <fieldset>        
-                <legend>Please enter your name & Last name</legend>
-                   <input required type="text" id="Name" name="NameLastName" placeholder="Enter Name">
-                   <input required type="text" id="Last name" name="NameLastName" placeholder="Enter Last name">  
-            </fieldset>
-            <fieldset>
-                <legend>Please Enter Your Email</legend>
-                   <input required type="text" id="Email" name="EmailPass" placeholder="Enter Email">
-                   <input required type="text" id="password" name="EmailPass" placeholder="Enter Password">
-            </fieldset> 
-            <fieldset>
-                <legend>Select Your Gender</legend>
-                   <input checked id="male" name="Gender" value="male" type="radio">
-                   <label for="male">Male</label>
-                   <input type="radio" id="female" name="Gender" value="female">
-                   <label for="female">Female</label>
-                   <input type="radio" id="Other" name="Gender" value="Other">
-                   <label for="Other">Other</label>
-            </fieldset>
-            <fieldset>
-                <legend>Do you want to be notified when something happens?</legend>
-                   <input checked type="checkbox" id="NotifyEverything" name="notify" value="NotifyEverything">
-                   <label for="NotifyEverything">Notify everything via my email</label>
-                   <input  type="checkbox" id="NotifyImportant" name="notify" value="NotifyImportant">
-                   <label for="NotifyImportant">Notify Important news (discounts or offers) via my email</label>
-                   <input  type="checkbox" id="NotifyPV" name="notify" value="NotifyPV">
-                   <label for="NotifyPV">Only notify private messages</label>
-            </fieldset>
-            <fieldset>
-                <legend>If there's anything else you like us to know, Tell us right away</legend>
-                  <input type="text" id="other" name="other" placeholder="Tell us here">
-            </fieldset>
-            <fieldset>
-                <legend>If you're done, click continue</legend>
-                  <button type="submit">Continue</button>
-            </fieldset>
-            </div>
+            <div id="all">
+              <main>
+                <form action="Signin-yes.html" method="post">         
+                  <fieldset>        
+                      <legend>Please enter your name & Last name</legend>
+                         <input required type="text" id="Name" name="Name" placeholder="Enter Name">
+                         <input required type="text" id="Last name" name="LastName" placeholder="Enter Last name">  
+                  </fieldset>
+                  <fieldset>
+                      <legend>Please Enter Your Email</legend>
+                         <input required type="email" id="Email" name="Email" placeholder="Enter Email">
+                         <input required type="password" id="password" name="Pass" placeholder="Enter Password" pattern="[a-zA-Z0-9]{8,}">
+                  </fieldset>
+                  <fieldset>
+                    <legend>Please enter your age</legend>
+                      <input required class="age" type="number" min="13" max="120">
+                  </fieldset>
+                  <fieldset>
+                      <legend>Select Your Gender</legend>
+                         <input checked id="male" name="Gender" value="male" type="radio">
+                         <label for="male">Male</label>
+                         <input type="radio" id="female" name="Gender" value="female">
+                         <label for="female">Female</label>
+                         <input type="radio" id="Other" name="Gender" value="Other">
+                         <label for="Other">Other</label>
+                  </fieldset>
+                  <fieldset class="notify">
+                    <legend>How did you heard from us?</legend>
+                      <select>
+                        <option>Select here...</option>
+                        <option>In the internet</option>
+                        <option>From a friend</option>
+                        <option>In the Google</option>
+                        <option>From Work</option>
+                      </select>
+                  </fieldset>
+                  <fieldset>
+                      <legend>Do you want to be notified when something happens?</legend>
+                         <input checked type="checkbox" id="NotifyEverything" name="notify" value="NotifyEverything">
+                         <label for="NotifyEverything">Notify everything via my email</label>
+                         <input  type="checkbox" id="NotifyImportant" name="notify" value="NotifyImportant">
+                         <label for="NotifyImportant">Notify Important news (discounts or offers) via my email</label>
+                         <input  type="checkbox" id="NotifyPV" name="notify" value="NotifyPV">
+                         <label for="NotifyPV">Only notify private messages</label>
+                  </fieldset>
+                  <fieldset>
+                      <legend>If there's anything else you like us to know, Tell us right away</legend>
+                        <textarea placeholder="Tell us here" cols="60" rows="4" name="other"></textarea>
+                  </fieldset>
+                  <fieldset>
+                      <legend class="done">If you're done, click continue</legend>
+                        <button class="done" type="submit" href="">Continue</button>
+                  </fieldset>
+                  </div>
+                </form>
+              </main>
       </section>
-      </main>
     </body>
     <footer>
      <div class="paper2"> 
       <div class="footer-sign">
         <p>Wanna hop back? click on <a href="Mainpage.html">Main Page</a></p>
-        <p>Already have an account?<a href=""> Log In Here</a></p>
+        <p>Already have an account?<a href="Log in.html"> Log In Here</a></p>
       </div>
       <div class="made-by">
         <p>Created by <strong>Detective V</strong></p>
