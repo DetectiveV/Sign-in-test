@@ -126,3 +126,8 @@ legend {
 main fieldset {
     margin-bottom: 10px;
 }
+
+input[type="email"] {
+    display: block;
+    margin-bottom: 8px;
+}
